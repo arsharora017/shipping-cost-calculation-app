@@ -2,6 +2,8 @@
 
 This project is a Shipping Box Application designed to calculate the shipping cost for boxes shipped from India to various countries worldwide. The app uses React for the UI, React Router for navigation, Redux Toolkit for state management, and TailwindCSS for styling.
 
+## Live App: https://shippingboxapp.web.app
+
 ## Overview
 
 The Shipping Box Application provides a simple interface with two views:
@@ -27,6 +29,7 @@ The Shipping Box Application provides a simple interface with two views:
 - **React Router** – For client-side routing.
 - **Redux Toolkit** – For state management.
 - **TailwindCSS** – For styling and responsive design.
+- **Google Firebase** - For hosting the app
 - **JavaScript (ES6+)**
 
 ## Directory Structure Overview
