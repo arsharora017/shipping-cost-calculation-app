@@ -1,14 +1,46 @@
-# Shipping Cost Calculation App
+# Shipping Box App
 
-## App Description:
+This project is a Shipping Box Application designed to calculate the shipping cost for boxes shipped from India to various countries worldwide. The app uses React for the UI, React Router for navigation, Redux Toolkit for state management, and TailwindCSS for styling.
 
-It is an application to calculate the shipping cost of boxes to specific locations worldwide from India.
+## Overview
 
-## Steps:
+The Shipping Box Application provides a simple interface with two views:
 
-- install Vite + React app
-- remove unnecessary code
-- install react-router
-- setup git
-- install and setup tailwindcss
-- setup react router in App.jsx - Wrapped Body component with <BrowserRouter />
+1. **Add Box Form:** A form to capture box details such as the receiver name, weight (kg), box colour, and destination country.
+2. **Box List View:** A table displaying the captured boxes along with their calculated shipping cost in INR.
+
+## Features
+
+- **Add Box Form:**
+
+  - Input fields for receiver name, weight, and destination country.
+  - A color picker that outputs RGB format, e.g., `(255, 255, 255)`.
+  - Basic validation (e.g., required fields, non-negative weight).
+
+- **Box List View:**
+  - A responsive table listing all boxes.
+  - Columns include Receiver Name, Weight, Box Colour, Destination Country, and Calculated Shipping Cost.
+
+## Tech Stack
+
+- **Vite + React** – For building user interfaces.
+- **React Router** – For client-side routing.
+- **Redux Toolkit** – For state management.
+- **TailwindCSS** – For styling and responsive design.
+- **JavaScript (ES6+)**
+
+## Directory Structure Overview
+
+- src
+  - components
+    - Body.jsx
+    - ColorBox.jsx
+    - NavBar.jsx
+  - store
+    - boxSlice.jsx
+    - store.jsx
+  - views
+    - AddBoxForm.jsx
+    - TableView.jsx
+  - App.jsx
+  - main.jsx
