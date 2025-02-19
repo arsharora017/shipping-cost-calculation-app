@@ -1,18 +1,19 @@
 import { useSelector } from "react-redux";
-import ColorBox from "../components/ColorBox";
 
 const TableView = () => {
   // Get the boxes from the Redux store
   const boxes = useSelector((state) => state.boxes.boxes);
   return (
-    <div className="max-w-4xl mx-auto mt-8 flex flex-col space-y-4 items-center w-full">
-      <h2 className="text-2xl font-semibold mb-4">Shipping Boxes List</h2>
+    <div className="max-w-4xl mx-auto mt-8 flex flex-col space-y-4 w-full overflow-x-auto">
+      <h2 className="text-2xl font-semibold mb-4 flex justify-center">
+        Shipping Boxes List
+      </h2>
       {boxes.length === 0 ? (
         <p className="text-gray-600 text-lg">
           No Boxes Available. Please add a box.
         </p>
       ) : (
-        <div className="overflow-x-auto">
+        <div>
           <table className="min-w-full bg-white border border-gray-200">
             <thead>
               <tr className="bg-gray-100 text-lg">
